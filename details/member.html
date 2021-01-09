@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>成员介绍</title>
+		<!--<link rel="stylesheet" href="../css/main.css" />-->
+		<link rel="stylesheet" href="../css/details.css" />
+		<link rel="stylesheet" href="../css/animation.css" />
+		<link rel="stylesheet" href="../css/pictures.css" />
+		<script type="text/javascript" src="../js/summer.js" ></script>
+	</head>
+	<body>
+		<div id="preloader">
+			<div id="status"></div>
+		</div>
+		
+		<div class="container">
+			<div class="full-img" id="background"></div>
+			<ul class="picture-wrapper" id="tada">
+				<li class="picture-box" data-src="../img/GL/zhu-fa-03.jpg"></li>
+				<li class="picture-box" data-src="../img/Tibet/tb.jpg"></li>
+				<li class="picture-box" data-src="../img/Tokyo/background3.jpg"></li>
+				<li class="picture-box" data-src="../img/CQ/千厮门大桥3.jpg"></li>
+			</ul>
+			<div class="leftbox">
+				<ul class="leaf" id="sa">
+					<li class="">
+						<a href="javascript:show(0);">刁泓好</a>
+					</li>
+					<li class="">
+						<a href="javascript:show(1);">巫柔颖</a>
+					</li>
+					<li class="">
+						<a href="javascript:show(2);">段颖芯</a>
+					</li>
+					<li class="">
+						<a href="javascript:show(3);">宋佳琪</a>
+					</li>
+					<li class="">
+						<a href="javascript:history.back(-1);">返回上级</a>
+					</li>
+				</ul>
+			</div>
+			<div class="picture-cover"></div>
+			<div class="rightbox">
+				<ul class="details-content" id="pada">
+					<section>
+						<h1>刁泓好</h1>
+						<hr />
+						<div>
+							<p>刁泓好同学的城市印象是中国桂林，介绍了漓江、独秀峰王城景区、两江四湖、象山公园、印象刘三姐、阳朔西街等地方。</p>
+						</div>
+						<!--<a href="#">进入详情</a>-->
+					</section>
+					
+					<section>
+						<h1>巫柔颖</h1>
+						<hr />
+						<div>
+							<p>巫柔颖同学的城市印象是西藏地区，介绍了西藏地区的布达拉宫、纳木措、色拉寺、雍布拉康、珠穆朗玛峰、八角街等地方。</p>
+						</div>
+						<!--<a href="#">进入详情</a>-->
+					</section>
+					
+					<section>
+						<h1>段颖芯</h1>
+						<hr />
+						<div>
+							<p>段颖芯同学的城市印象是日本东京，介绍了东京的富士山、浅草寺、新宿、东京铁塔、明治神宫、哆啦A梦博物馆等地方。</p>
+						</div>
+						<!--<a href="#">进入详情</a>-->
+					</section>
+					
+					<section>
+						<h1>宋佳琪</h1>
+						<hr />
+						<div>
+							<p>宋佳琪同学的城市印象是中国重庆，介绍了洪崖洞、解放碑、长江索道、重庆人民大礼堂、鹅岭二厂、千厮门大桥等地方。</p>
+						</div>
+						<!--<a href="#">进入详情</a>-->s
+					</section>
+				</ul>
+				
+			</div>
+	
+		</div>
+	
+		<script>
+				 for(var i = 0 ; i<tada.children.length ; ++i){
+					  	for(var p = 0; p < 28 ; ++p){
+					  		tada.children[i].innerHTML += '<span><span><img src="'+tada.children[i].dataset.src+'"/></span></span>';
+					  	}
+				 }
+				 list      = sa;
+				 previous1 = null;
+				 previous2 = null;
+				 previous3 = null;
+				 
+				 function show(t){
+				 	if(t > tada.children.length-1){
+				 		console.log(">");
+				 		return;
+				 	}
+				 	if(previous1 == null){
+				 		background.style.display = "none";
+				 	}else{
+				 		removeClass(previous3,"active");
+				 		removeClass(previous1,"btt-show");
+				 		removeClass(previous2,"relative-show");
+				 	}
+				 	addClass(tada.children[t],"btt-show");
+				 	addClass(pada.children[t],"relative-show");
+				 	addClass(list.children[t],"active");
+				 	previous1 = tada.children[t];
+				 	previous2 = pada.children[t];
+				 	previous3 = list.children[t];
+				 }
+				
+				window.onload = function(){
+					preloader.style.opacity = "0";
+					setTimeout(function(){
+						document.body.removeChild(preloader);
+						show(0);
+					},500);
+					
+				}
+				
+			</script>
+	</body>
+</html>

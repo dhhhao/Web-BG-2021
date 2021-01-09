@@ -1,0 +1,605 @@
+*{
+	padding:0;
+	margin: 0;
+	font-family: "微软雅黑", sans-serif;
+	
+}
+body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+html{
+	width: 100%;
+	height: 100%;
+	min-width:1366px;
+	font-size: 1em;
+	position: relative;
+}
+.container {
+	backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.full-img[id="background"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	background: url(../img/CQ/千厮门大桥3.jpg) center/105% 105% fixed no-repeat;
+}
+
+.full-img[id="background1"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	background: url(../img/2210d8392a00410c981dd4e4ec351bbb.jpg) center/105% 105% fixed no-repeat;
+}
+
+.full-img[id="background2"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	/*filter: blur(2px);*/
+	background: url(../img/CQ/千厮门大桥.jpg) center/105% 105% no-repeat;
+}
+
+.full-img[id="background3"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	/*filter: blur(2px);*/
+	background: url(../img/GL/zhu-fa-03.jpg) center/105% 105% fixed no-repeat;
+}
+
+.full-img[id="background4"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	/*filter: blur(2px);*/
+	background: url(../img/Tokyo/background3.jpg) center/105% 105% no-repeat;
+}
+
+.full-img[id="background5"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	/*filter: blur(2px);*/
+	background: url(../img/Tibet/tb.jpg) center/105% 105% fixed no-repeat;
+}
+
+
+.full-img[id="background6"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	/*filter: blur(2px);*/
+	background: url(../img/TAp/teamAP.jpg) center/105% 105% no-repeat;
+}
+
+
+.full-img[id="background7"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	/*filter: blur(2px);*/
+	background: url(../img/2210d8392a00410c981dd4e4ec351bbb.jpg) center/105% 105% fixed no-repeat;
+}
+
+
+.container > .content-dark {
+	background:rgba(22,22,22,0.7);
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	
+}
+
+.container > .content-light {
+	background:rgba(22,22,22,0.2);
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	
+}
+
+.container > .content-transparent{
+	background:rgba(22,22,22,0.0);
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+}
+
+.container > .content-logo{
+	text-align: center;
+	position: absolute;
+	top:20%;
+	left:0;
+	width: 100%;
+	height: 10em;
+	background: rgba(23,45,59,0.9);
+	border-bottom: rgb(1,34,41) 0.5em solid;
+}
+
+
+
+
+
+
+.p_s_1{
+	background: url(../img/title.png) 0 /contain no-repeat;
+	/*color: #fffff0;*/
+	font-size: 6.5em;
+	text-align: center;
+	color: transparent;
+}
+.p_1{
+	text-align: center;
+}
+#navigator{
+	backface-visibility: hidden;
+	position: relative;
+	top:25%;
+	width: 85%;
+	height: 45%;
+	margin: 0 auto;
+	/*border: 1px red solid;*/
+}
+.clearfix{
+	clear:both;
+}
+
+ul.nav-list{
+	margin:0 auto;
+	text-align: center;
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.nav-list >li{
+	/*display: block;*/
+	width: 180px;
+	height: 300px;
+	/*overflow-y: hidden;*/
+	/*border: 1px red solid;*/
+	margin: 0.75em 0.4em;
+	display: inline-block;
+	position: relative;
+}
+ul.nav-list >li > a{
+	height: 100%;
+	width: 100%;
+	display: inline-block;
+}
+
+.first-top{
+	width: 100%;
+	background: #FFFFF0;
+	height: 25%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/ame/c2afeb602477c1446838bdc985767cb0.jpg) 0 40% / cover;
+}
+.first-bottom{
+	width: 100%;
+	background: #FFFFF0;
+	height: 15%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 55;
+	background: url(../img/ame/c2afeb602477c1446838bdc985767cb0.jpg) 0 100% / cover;
+}
+
+
+ul.nav-list > li:before{
+	content:' ';
+	width: 100%;
+	height: 100%;
+	background: darkcyan;
+	display: block;
+	position: absolute;
+	left:-2%;
+	top:0;
+	z-index: -15;
+	border-radius: 0.25em;
+	transform: skewX(-10deg);
+	transition: width 0.1s , height 0.1s , left 0.1s , top 0.1s , background-size 0.2s ease 0.05s;
+}
+
+
+
+ul.nav-list > li:nth-of-type(1)::before{
+	background: url(../img/icon/cq.png) center/100% no-repeat;
+
+} 
+
+ul.nav-list > li:nth-of-type(2)::before{
+	background: url(../img/icon/gl.jpg) center/100% no-repeat;
+	
+} 
+
+ul.nav-list > li:nth-of-type(3)::before{
+	background: url(../img/icon/Tokyo.png) center/100% no-repeat;
+} 
+
+ul.nav-list > li:nth-of-type(4)::before{
+	background: url(../img/icon/Tibet.png) center/100% no-repeat;
+} 
+
+ul.nav-list > li:nth-of-type(5)::before{
+	background: url(../img/icon/team.png) center/100% no-repeat;
+}
+
+ul.nav-list > li:hover::before{
+	background-size: 100%;
+}
+
+
+.disable-hover {
+    pointer-events: none;
+}
+
+ul.nav-list > li:hover::before{
+	width: 102%;
+	height: 102%;
+	/*left: 3.5%;*/
+	top:-2.5%;
+	position: absolute;
+	left:-15px;
+
+}
+
+.arrow{
+	cursor: pointer;
+	width:48px;
+	height: 48px;
+	position: absolute;
+	margin:  0 auto;
+	bottom: 6em;
+	left: calc(50% - 24px);
+	animation: arrow-ani 1s linear 0s infinite alternate ;
+	
+}
+.arrow img{
+	height: 100%;
+}
+@keyframes arrow-ani{
+	from{bottom : 6em;}
+	to{bottom: 4em;}
+}
+ul.nav-list > li:hover  span.tips{
+	width: 102%;
+	left: -21%;
+	
+	/*position: absolute;*/
+}
+
+.tips{
+	width: 100%;
+	left: -15%;
+	padding: 0.2em 0 0.1em 0 ;
+	overflow: hidden;
+	position: absolute;
+	z-index: 1;
+	color: #FFFFF0;
+	font-size: 1.5em;
+	text-align: center;
+	display: inline-block;
+	background: rgba(128,128,128,0.5);
+	transform: skewX(-15deg);
+	border-radius: 0.25em;
+	bottom: 0;
+	transition: width 0.2s , height 0.2s , left 0.2s , top 0.2s , background-size 0.2s ease 0.05s;
+}
+
+.leftmap{
+	
+	width: 30%;
+	height: 50%;
+	background: darkred;
+	border-radius: 0.75em;
+	float:left;
+	position: absolute;
+	top:calc(50% - 25%);
+	left: 10%;
+	opacity: 0.85;
+}
+
+.slider{
+	
+	display: block;
+	position: fixed;
+	height: 8.6em;
+	width: 4.4em;
+	bottom: 20%;
+	right: 2%;
+	background: rgba(70,79,79,0.6);
+	z-index: 2222;
+	opacity: 0;
+	transition: opacity 0.75s;
+	
+}
+.slider > a{
+	width: 4em;
+	height: 2.8em;
+	margin: 0.2em;
+	display: block;
+	background: rgb(18,30,30);
+	color: #CECECE;
+	padding-top: 1.2em;
+	text-align: center;
+	transition: all 0.2s;
+	cursor: pointer;
+	text-decoration: none;
+	
+}
+
+.slider > a:hover{
+	color:rgb(18,30,30);
+	background: #CECECE;
+}
+
+.rightbox{
+	padding: 1%;
+	width: 44%;
+	height: 48%;
+	background: rgba(118,10,14,0.1);
+	border-radius: 0.75em;
+	float:right;
+	display: block;
+	font-weight: normal !important; 
+	position: absolute;
+	top:calc(50% - 25%);
+	right: 10%;
+	opacity: 0.85;
+}
+
+.leftbox{
+	padding: 1%;
+	width: 44%;
+	height: 48%;
+	background: rgba(118,10,14,0.5);
+	border-radius: 0.75em;
+	float:left;
+	display: block;
+	font-weight: normal !important; 
+	position: absolute;
+	top:calc(50% - 25%);
+	left: 10%;
+	opacity: 0.85;
+}
+
+.rightbox > h1,h2,h3,h4,h5{
+	color : #EFEFEF;
+}
+.rightbox hr{
+	margin: 1em 0;
+	text-align: left;
+	border-radius: 2px;
+	border: 0;
+	height: 2px;
+	width:50%;
+	background: #CECECE;
+}
+.rightbox div{
+	padding: 1em;
+	font-size: 1.25em;
+	color: #EFEFEF;
+}
+
+.leftbox > h1,h2,h3,h4,h5{
+	color : #EFEFEF;
+	text-align: right;
+}
+
+.leftbox > a , .rightbox > a {
+	margin-left: 1em;
+	display: inline-block;
+	border: 3px #EFEFEF solid;
+	color : #EFEFEF;
+	text-align: center;
+	padding: 0.5em;
+	text-decoration: none;
+	transition: all 0.25s;
+}
+
+.leftbox > a:hover , .rightbox > a:hover {
+	color:#222;
+	background: rgba(255,255,255,0.6);
+}
+
+.leftbox hr{
+	margin: 1em 0;
+	text-align: right;
+	border-radius: 2px;
+	border: 0;
+	height: 2px;
+	width:50%;
+	position: relative;
+	left: 50%;
+	background: #CECECE;
+}
+.leftbox div{
+	padding: 1em;
+	font-size: 1.25em;
+	color: #EFEFEF;
+}
+
+.rightmap{
+	width: 30%;
+	height: 50%;
+	background: darkred;
+	border-radius: 0.75em;
+	float:right;
+	position: absolute;
+	top:calc(50% - 25%);
+	right: 10%;
+	opacity: 0.85;
+}
+
+#map_ea{
+	background: url(../img/map/重庆.jpg) center/cover no-repeat;
+}
+#map_sa{
+	background: url(../img/map/桂林.jpg) center/cover no-repeat;
+}
+#map_me{
+	background: url(../img/map/map_japan.jpg) center/cover no-repeat;
+}
+#map_afk{
+	background: url(../img/map/西藏.jpg) center/cover no-repeat;
+}
+#map_eu{
+	background: url(../img/map/teamA.jpg) center/cover no-repeat;
+}
+
+@keyframes goAHead{
+	from{left:-2em;}
+	to{left:100%}
+}
+
+.left-form{
+	width: 40%;
+	height: 54%;
+	top:23%;
+	left: 10%;
+	position: absolute;
+	background: rgba(72,84,109,0.5);
+	border-radius: 2px;
+	padding: 1em;
+}
+
+.right-form{
+	width: 30%;
+	height: 25%;
+	top:37.5%;
+	right: 10%;
+	position: absolute;
+	/*background: rgba(72,84,109,0.5);*/
+	border-radius: 2px;
+	padding: 1em;
+	text-align: center;
+}
+
+.right-form > h1{
+	font-size: 5.5em;
+	color: #FFFFF0;
+	text-shadow: 2px 2px 16px #222222;
+}
+
+.right-form > hr{
+	border: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFF0;
+	box-shadow: 1px 1px 1px 1px #222;
+}
+
+.right-form > p{
+	font-size: 2em;
+	color: #FFFFF0;
+	text-shadow: 2px 2px 16px #222222;
+}
+
+/*.left-form > form{
+	border:
+}*/
+
+.form-field{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	min-height: 3.5em;
+	padding: 0.25em;
+	position: relative;	
+}
+
+.form-field > label{
+	text-align: left;
+	display: block;
+	color: #FFFFF0;
+	font-weight: 600;
+	font-size: 1.25em;
+	padding: 0.25em ;
+}
+
+.form-field > input {
+	width: 98%;
+	display: block;
+	height: 2.5em;
+	vertical-align: center;
+	border: 3px lightskyblue solid;
+	border-radius: 6px;
+	padding: 0 0.25em;
+	box-shadow: 1px 1px 1px 1px #666;
+	background: rgba(255,255,248,0.8);
+	
+}
+
+
+.form-field > input[type="submit"] {
+	width:15%;
+	/*height: 1.5em;*/
+	display: block;
+	background: rgb(0,49,79);
+	height: 2.5em;
+	position: absolute;
+	right: 1%;
+	vertical-align: center;
+	border: 0;
+	color: #FFFFF0;
+	/*border: 3px rgb(26,188,156) solid;*/
+	border-radius: 6px;
+	padding: 0 0.5em;
+	
+	
+}
+
+.form-field > textarea{
+	width: 98%;
+	resize: none;
+	border: 3px lightskyblue solid;
+	border-radius: 6px;
+	padding: 0.5em;
+	background: rgba(255,255,248,0.8);
+	box-shadow: 1px 1px 1px 1px #666;
+}
+
+
+
+
+
+
+
+
+/*.tips::before{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: 4;
+	content:' ';
+	transform: skewX(-15deg);
+	border-radius: 0.25em;
+	background: rgba(128,128,128,0.5);
+}*/
+
+
+
+
+

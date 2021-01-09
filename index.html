@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>城市印象-Web</title>
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/animation.css" />
+		<link rel="stylesheet" href="css/pictures.css" />
+		<style type="text/css" id="timerAfter"></style>
+	</head>
+	<body>
+		
+		<!-- Preloader -->
+		<div id="preloader">
+			<div id="status"></div>
+		</div>
+		
+		<div class="slider" id="side">
+			<a href="javascript:fst=true;times=0,softScrollTo(0)">
+			  第一屏			
+			</a>
+			<a href="javascript:fst=true;times=1,softScrollTo(window.innerHeight)">
+				目录
+			</a>
+		</div>
+		<div class="container">
+			
+			<div class="full-img" id="background"></div>
+			<!--      Pictures           -->
+			<ul class="picture-wrapper" id="tada">
+				<li class="picture-box" data-src="img/GL/zhu-fa-03.jpg"></li>
+				<li class="picture-box" data-src="img/Tibet/tb.jpg"></li>
+				<li class="picture-box" data-src="img/Tokyo/background3.jpg"></li>
+				<li class="picture-box" data-src="img/CQ/解放碑.jpg"></li>
+				<li class="picture-box" data-src="img/Tibet/zmlmf.jpg"></li>
+				<li class="picture-box" data-src="img/Tokyo/bwg.jpg"></li>
+				<li class="picture-box" data-src="img/GL/liangjiangsihu.jpg"></li>
+				<li class="picture-box" data-src="img/CQ/千厮门大桥3.jpg"></li>
+			</ul>
+			<!--  LOGO HERE  -->
+			<div class="content-logo" id="content1">
+				<p class="p_1"><span class="p_s_1">城市印象</span></p>
+			</div>
+			<div class="arrow" id="arrow"><a onclick="fst=true;times=1;softScrollTo(window.innerHeight);"><img src="img/down_arrow_178.09655172414px_1205406_easyicon.net.png"></a></div>
+			<!--<div class="first-bottom">
+				
+			</div>-->
+			
+			
+		</div>
+		
+		
+		<div class="container">
+			
+			<div class="full-img" id="background1"></div>
+			<div class="content-light" id="content1">
+
+				<div id="navigator">
+					<ul class="nav-list">
+					
+						<li>
+							<a href="javascript:times=2,softScrollTo(2*window.innerHeight)"></a>
+							<span class="tips">重庆印象</span>
+						</li> 
+						<li>
+							<a href="javascript:times=3,softScrollTo(3*window.innerHeight)"></a>
+							<span class="tips">桂林印象</span>
+						</li>
+						<li>
+							<a href="javascript:times=4,softScrollTo(4*window.innerHeight)"></a>
+							<span class="tips">东京印象</span>
+						</li>
+						<li>
+							<a href="javascript:times=5,softScrollTo(5*window.innerHeight)"></a>
+							<span class="tips">西藏印象</span>
+						</li>
+						<li>
+							<a href="javascript:times=6,softScrollTo(6*window.innerHeight)"></a>
+							<span class="tips">成员介绍</span>
+						</li>
+
+					</ul>
+				</div>
+				<div class="arrow" id="arrow"><a onclick="fst=true;times=2;softScrollTo(2*window.innerHeight);"><img src="img/down_arrow_178.09655172414px_1205406_easyicon.net.png"></a></div>
+			</div>
+			
+			
+		</div>
+		
+		<div class="container">
+			<a name="1"></a>
+			<div class="full-img" id="background2"></div>
+			<div class="content-light article" id="content1">
+				<div class="leftmap animated" id="map_ea"></div>
+				<div class="rightbox animated" id="2" style="background: rgba(4,54,85,0.2);">
+					<h1>中国重庆</h1>
+					<hr />
+					<div>
+						<p>重庆（简称：渝或巴），别称江城、雾都，是中华人民共和国直辖市，是国际大都市、国家中心城市、超大城市、西部大开发重要的战略支点、“一带一路”和长江经济带重要联结点以及内陆开放高地。重庆地处中国西南部，东邻湖北、湖南，南靠贵州，西接四川，北连陕西；属亚热带季风性湿润气候，著名景点有洪崖洞、大足石刻等。</p>
+						<p>重庆经济建设基本形成大农业、大工业、大交通、大流通并存的格局，是西南地区和长江上游最大的经济中心城市。</p>
+					</div>
+					<a href="details/chongqing.html">进入详情</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+		<div class="container">
+			
+			<div class="full-img" id="background3"></div>
+			<div class="content-light" id="content1">
+				<div class="leftbox animated" id="3" style="background: rgba(72,84,109,0.5);">
+						<h1>中国桂林</h1>
+						<hr />
+						<div>
+							<p>当你拿出一张20元人民币时，背面的山水画一定会吸引你的注意，只见碧水荡漾、清可见底的漓江将两岸的山一分为二，梦幻的白雾围着山峦舞动，一叶小舟在渔夫的划动下，驶向远方。这个美丽的地方在哪里呢？</p>
+						</div>
+						<a href="details/guilin.html">进入详情</a>
+				</div>
+				<div class="rightmap animated" id="map_sa"></div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+		<div class="container">
+			
+			<div class="full-img" id="background4"></div>
+			<div class="content-light" id="content1">
+				<div class="leftmap animated" id="map_me"></div>
+				<div class="rightbox animated" id="4" style="background: rgba(20,30,46,0.4);">
+					<h1>日本东京</h1>
+					<hr />
+					<div>
+						<p>在明治2年3月28日，日本的都（みやこ）从京都迁移到东京。自德川幕府时代以来开始成为日本主要都市之一，明治维新时期改名为东京后，更发展为日本政治、经济、文化、交通等众多领域的枢纽中心。经过二战后的继续发展，东京不仅成为世界商业金融、流行文化与时尚重镇，亦为世界经济发展度与富裕程度最高的都市之一
+						</p>
+						<p>东京综合实力评价为亚洲城市第一位，国际社会惯例上将其视为与西方伦敦、纽约、巴黎并列，为已开发世界中具有全方位主导性的四大全球城市之一。</p>
+					</div>
+					<a href="details/Tokyo.html">进入详情</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+		
+		<div class="container">
+			
+			<div class="full-img" id="background5"></div>
+			<div class="content-light" id="content1">
+				<div class="leftbox animated" id="5" style="background: rgba(72,84,109,0.5);">
+						<h1>中国西藏</h1>
+						<hr />
+						<div>
+							<p>西藏位于中国的西南边陲，世界上面积最大、海拔最高的高原之上，并以其举世无双的高原雪域风光和独特的高原地理文化闻名于世。有珠峰自然保护区、藏北羌塘自然保护区、藏东南雅鲁藏布大峡谷自然保护区三大世界自然保护区，以及布达拉宫、大昭寺等世界文化保护遗产。</p>
+							<p>西藏农畜产品以其纯天然、无污染而享誉世界，有藏香、藏刀、唐卡等手工艺品，并以“西藏好水，世界共饮”代表雪域好产品逐步走出高原、走向世界。</p>
+						</div>
+						<a href="details/Tibet.html">进入详情</a>
+				</div>
+				<div class="rightmap animated" id="map_afk"></div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+		
+		<div class="container">
+			
+			<div class="full-img" id="background6"></div>
+			<div class="content-light" id="content1">
+				<div class="leftmap animated" id="map_eu"></div>
+				<div class="rightbox animated " id="6" style="background: rgba(20,30,46,0.4);">
+					<h1>我们队伍</h1>
+					<hr />
+					<div>
+						<p>我们队伍的名称是Apachepig，队伍中一共有四个人，分别是我们的组长刁泓好、队员巫柔颖、队员段颖芯、队员宋佳琪。</p>
+						<p>我们队伍分工明确、合作和谐，每个人都有自己负责的部分，每个人所负责的组合起来形成了现在的这个网站。</p>
+						<p>队伍里每个人都把自己喜欢的城市地区的美景之处汇总组成一个页面，最终组成我们组的城市印象网站。</p>
+					</div>
+					<a href="details/member.html">进入详情</a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			
+		</div>
+
+		
+
+		<script type="text/javascript" src="js/summer.js" ></script>
+		<script type="text/javascript">
+			var timestamp = 0.0;
+			var times = 0;
+			    fst = false;
+			var page = 6;
+			var tadap = null;
+			var tadat = 0;
+			
+			var effects = ["show" , "splash-show" , "btt-show" , "rot-show"];
+			var effectOffset = 0;
+			
+			
+			document.onreadystatechange = function(){
+				if(document.readyState.toLowerCase() == "complete"){
+						setTimeout(function(){
+							document.body.scrollTop = 0;
+							document.documentElement.scrollTop = 0;
+						},1);
+						document.addEventListener("mousewheel",function(e){
+							console.log(e.wheelDelta);
+							e.preventDefault();
+							if(fst || e.timeStamp - timestamp < 1200.0){
+								return;
+							}
+							fst = true;
+							timestamp = e.timeStamp;
+							
+							if(e.wheelDelta < 0){
+								times = (times >= page ) ? page : 1+times;
+								console.log("next");
+							}else{
+								times = (times-1 <= 0 ) ? 0 : times-1;
+								console.log("previous");
+							}
+							softScrollTo(window.innerHeight*times);
+							console.log(times);
+							return;
+							
+							
+							
+							
+						},true);
+						if (typeof document.onmousewheel == "undefined") {
+							console.log("FF");
+						     document.addEventListener("DOMMouseScroll",function(e){
+								e.preventDefault();
+								console.log(e.detail);
+								if(e.timeStamp - timestamp < 1200.0){
+									return;
+								}
+								fst = true;
+								timestamp = e.timeStamp;
+								if(e.detail > 0){
+									times = (times >= page ) ?page : 1+times;
+									console.log("next");
+									
+								}else{
+									times = (times-1 <= 0 ) ? 0 : times-1;
+									console.log("previous");
+									
+								}
+								softScrollTo(window.innerHeight*times);
+								console.log(times);
+								return;
+								
+								
+								
+								
+							},true);
+					   	} 
+					   	
+					  //tada box
+					  
+					  for(var i = 0 ; i<tada.children.length ; ++i){
+					  	for(var p = 0; p < 28 ; ++p){
+					  		tada.children[i].innerHTML += '<span><span><img src="'+tada.children[i].dataset.src+'"/></span></span>';
+					  	}
+					  }
+						setInterval(function(){
+						 	// console.log(tadat);
+						 	background.style.display="none";
+						 	 if(tadap != null){
+						 	 	
+								 removeClass(tadap,effects[effectOffset]);
+							 }
+						 	 		 effectOffset = parseInt(Math.random()*4);
+								  	 addClass(tada.children[tadat],effects[effectOffset]);
+								  	 tadap = tada.children[tadat];
+								  	 tadat++;
+								  	 tadat = tadat % tada.children.length;
+						 },4000);
+				}
+			}
+			
+			document.body.addEventListener("mousemove",function(e){
+				
+				var offsetX = e.clientX / window.innerWidth - 0.5,
+					offsetY = e.clientY / window.innerHeight- 0.5;
+					
+					background1.style.backgroundPosition = (-1*offsetX*10-5)+"px "+(-1*offsetY*10-5)+"px";
+				
+			},true);
+			
+			
+			window.onload = function(){
+				preloader.style.opacity = "0";
+				timerAfter.innerText = ".container > .content-logo::after{\
+																content: ' ';\
+																display: block;\
+																position: absolute;\
+																width: 3em;\
+																height: 0.5em;\
+																border-radius: 0.25em;\
+																background: rgb(248,147,29);\
+																bottom: -0.5em;\
+																left: -3em;\
+																z-index: 6;\
+																animation: goAHead 4s linear 0s infinite;\
+																}";
+				setTimeout(function(){
+					document.body.removeChild(preloader);
+					
+				},500);
+			}
+			
+			
+			 
+			
+				
+		</script>
+		
+		
+		
+	</body>
+</html>

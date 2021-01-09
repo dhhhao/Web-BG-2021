@@ -1,0 +1,240 @@
+*{
+	padding:0;
+	margin: 0;
+	font-family: "微软雅黑", sans-serif;
+	
+}
+body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(23,45,56,0.1);
+}
+html{
+	width: 100%;
+	height: 100%;
+	min-width:1366px;
+	font-size: 1em;
+	position: relative;
+}
+.container {
+	backface-visibility: hidden;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.leftbox{
+	/*background: rgba(23,45,56,0.5);*/
+	width: auto;
+	height: 50%;
+	position: absolute;
+	bottom:20%;
+	z-index: 6;
+	
+	/*overflow: hidden;*/
+}
+.picture-cover{
+	background: rgba(23,45,56,0.25);
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+}
+
+.rightbox{
+	width: 60%;
+	height: 70%;
+	top: 15%;
+	right: 20%;
+	position: absolute;
+	/*background: rgba(23,45,56,0.25);*/
+	overflow-x: hidden;
+	overflow-y: auto;
+	z-index: 5;
+	border-radius: 0.25em;
+	color: #EFEFEF;
+}
+ul.details-content {
+	list-style: none;
+}
+
+ul.details-content > section{
+	padding: 1.25em;
+	color:#FFFFF0;
+	font-size: 1.25em;
+	font-weight: lighter;
+	opacity: 0;
+	display: none;
+}
+
+ul.details-content > section > h1{
+	margin-bottom: 0.5em;
+}
+
+ul.details-content > section > hr{
+	width:100%;
+	height: 4px;
+	border-radius: 6px;
+	border: 0;
+	background: rgba(255,255,248,0.8);
+}
+
+
+ul.details-content > section > div{
+	padding: 0.25em;
+	margin: 1em;
+}
+
+ul.details-content > section > div > p {
+	margin-top: 0.4em;
+	text-shadow: 1px 1px 5px rgb(23,45,56);
+}
+
+
+
+
+ul.leaf{
+	width: 120%;
+	list-style: none;
+	
+}
+
+ul.leaf > li{
+	line-height: 250%;
+	font-size: 1.25em;
+	text-align: right;
+	position: relative;
+	top:-4em;
+	left: -2em;
+	width: 9em;
+	height: 2.5em;
+	margin: 1em 0.25em;
+	transform: rotate(-35deg);
+	transform-origin:  50% 50%;
+	padding: 0.25em;
+}
+
+
+ul.leaf[id="ea"] > li::before{
+	background: rgba(255,192,0,0.9);
+}
+
+ul.leaf[id="ea"] > li::after{
+	background: rgba(213,26,33,0.75);
+}
+
+
+ul.leaf[id="sa"] > li::after{
+	background: rgba(130,56,53,0.75);
+}
+
+ul.leaf[id="sa"] > li::before{
+	background: rgba(20,68,106,0.9);
+}
+
+
+ul.leaf >li::before{
+	content: ' ';
+	position: absolute;
+	z-index: -1;
+	left: -15%;
+	top: 0;
+	width: 130%;
+	height: 100%;
+	transform: skewX(-35deg);
+	/*box-shadow: 1px 1px 1px 1px rgb(255,192,0);*/
+}
+ul.leaf > li::after{
+	content: ' ';
+	position: absolute;
+	left: -40%;
+	top: 0;
+	width: 60%;
+	z-index: 2;
+	height: 100%;
+	display: block;
+	transform: skewX(-35deg);
+	transition: all 0.3s;
+}
+
+
+ul.leaf > li > a{
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+ul.leaf > li:hover::after{
+	left: -10%;
+}
+
+ul.leaf > li.active::after{
+	left: -10%;
+}
+
+.full-img[id="background"]{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: -999;
+	background: url(../img/loading.jpg) center/105% 105% fixed no-repeat;
+}
+
+
+
+.quick {
+  animation-name: quick;
+}
+
+.relative-show{
+	display: block !important;
+	/*opacity: 1 !important;*/
+	animation: c-show 2s ease 1 forwards;
+	
+}
+
+
+@keyframes quick {
+  from {
+  	opacity: 0;
+  	filter: blur(10px);
+    transform: scale3d(1, 1, 1);
+  }
+  10%, 20% {
+  	opacity: 1;
+  	filter: blur(5px);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%, 50%, 70%, 90% {
+  	opacity: 1;
+  	filter: blur(2px);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%, 60%, 80% {
+  	opacity: 1;
+  	filter: blur(5px);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+  	opacity: 1;
+  	filter: blur(0px);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes c-show{
+	from{
+		opacity: 0;
+		filter: blur(10px); }
+	to{opacity: 1;
+		filter: blur(0px);}
+}
+
+
+
